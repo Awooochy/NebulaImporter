@@ -11,7 +11,7 @@ All fits in a dll!
 0 data collection! Only ip.
 No need for updates! All is handled serverside!
 
-Community Content!
-You can add assets to it, join us in the discord server!
-FULLY FREE
-https://discord.gg/b8zNJybE2d
+2.0 Remake:
+Now has a public mode that doesn't require account and a private mode.
+Rewritted most of it.
+Discontinued due to lack of free time.
