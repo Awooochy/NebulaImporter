@@ -8,7 +8,7 @@ Fully Optimized.
 Assets links hosted serverside.
 Cool coloring of the UI.
 All fits in a dll!
-0 data collection! Only ip.
+0 data collection!
 No need for updates! All is handled serverside!
 
 2.0 Remake:
