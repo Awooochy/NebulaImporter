@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Importer Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nebula Importer Admin Panel</h1>
+
+        <div id="loginSection" class="card">
+            <h2>Admin Login</h2>
+            <p>Please enter your admin key to access the management features.</p>
+            <div class="form-group">
+                <label for="adminKeyInput">Admin Key:</label>
+                <input type="password" id="adminKeyInput" placeholder="Enter your secret admin key">
+            </div>
+            <button id="loginBtn">Login</button>
+            <p id="loginStatus"></p>
+        </div>
+
+        <div id="adminPanelSections" style="display: none;">
+            <div class="header-actions">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+
+            <div class="section-management card">
+                <h2>Manage Sections (Subzones)</h2>
+                <div class="form-group">
+                    <label for="sectionNameInput">Section Name:</label>
+                    <input type="text" id="sectionNameInput" placeholder="e.g., Public Assets, Member Content">
+                </div>
+                <button id="addSectionBtn">Add New Section</button>
+                <button id="updateSectionBtn">Update Selected Section</button>
+                <button id="deleteSectionBtn" class="delete-btn">Delete Selected Section</button>
+                <p id="sectionStatus"></p>
+            </div>
+
+            <div class="upload-section card">
+                <h2>Upload New Unity Package</h2>
+                <input type="file" id="unityPackageFile" accept=".unitypackage">
+                <button id="uploadFileBtn">Upload File</button>
+                <p id="uploadStatus"></p>
+            </div>
+
+            <div class="resource-section card">
+                <h2>Manage Resources and Buttons</h2>
+
+                <div class="form-group">
+                    <label for="resourceName">Resource Name (Unique ID):</label>
+                    <input type="text" id="resourceName" placeholder="e.g., MyNewShaderPack">
+                </div>
+
+                <div class="form-group">
+                    <label for="resourceURL">Resource URL (auto-filled on upload):</label>
+                    <input type="text" id="resourceURL" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="accessLevel">Access Level:</label>
+                    <input type="number" id="accessLevel" min="0" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="buttonLabel">Button Label (how it appears in Unity):</label>
+                    <input type="text" id="buttonLabel" placeholder="e.g., My Shader Pack v1.0">
+                </div>
+
+                <div class="form-group">
+                    <label for="sectionSelect">Assign to Section:</label>
+                    <select id="sectionSelect"></select>
+                </div>
+
+                <button id="addOrUpdateResourceBtn">Add/Update Resource</button>
+                <button id="deleteResourceBtn" class="delete-btn">Delete Selected Resource</button>
+
+                <p id="resourceStatus"></p>
+            </div>
+
+            <div class="current-resources card">
+                <h2>Current Resources</h2>
+                <div id="resourcesList">
+                    <p>Resources will load here after successful login.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

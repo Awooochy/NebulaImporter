@@ -1,0 +1,225 @@
+/* Add this to your style.css */
+
+
+body {    
+    font-family: 'Inter', sans-serif;    
+    margin: 0;    
+    padding: 20px;    
+    background-color: #f0f2f5;    
+    color: #333;    
+    display: flex;    
+    justify-content: center;    
+    align-items: flex-start;    
+    min-height: 100vh;    
+}    
+
+.container {    
+    width: 100%;    
+    max-width: 900px;    
+    margin: 20px auto;    
+    background-color: #ffffff;    
+    padding: 30px;    
+    border-radius: 12px;    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);    
+}    
+
+h1 {    
+    color: #2c3e50;    
+    text-align: center;    
+    margin-bottom: 30px;    
+    font-size: 2.2em;    
+    font-weight: 700;    
+}    
+
+h2 {    
+    color: #34495e;    
+    text-align: center;    
+    margin-bottom: 25px;    
+    font-size: 1.6em;    
+    font-weight: 600;    
+}    
+
+.card {    
+    background-color: #ecf0f1;    
+    border: 1px solid #dde3e9;    
+    padding: 25px;    
+    margin-bottom: 25px;    
+    border-radius: 10px;    
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);    
+}    
+
+.form-group {    
+    margin-bottom: 18px;    
+}    
+
+.form-group label {    
+    display: block;    
+    margin-bottom: 8px;    
+    font-weight: 600;    
+    color: #555;    
+}    
+
+.form-group input[type="text"],    
+.form-group input[type="number"],    
+.form-group input[type="password"],    
+.form-group select {    
+    width: calc(100% - 22px);    
+    padding: 11px;    
+    border: 1px solid #bdc3c7;    
+    border-radius: 6px;    
+    font-size: 1em;    
+    box-sizing: border-box;    
+    transition: border-color 0.3s ease;    
+}    
+
+.form-group input[type="text"]:focus,    
+.form-group input[type="number"]:focus,    
+.form-group input[type="password"]:focus,    
+.form-group select:focus {    
+    border-color: #3498db;    
+    outline: none;    
+}    
+
+
+button {    
+    background-color: #3498db;    
+    color: white;    
+    padding: 12px 20px;    
+    border: none;    
+    border-radius: 6px;    
+    cursor: pointer;    
+    font-size: 1.1em;    
+    margin-right: 12px;    
+    transition: background-color 0.3s ease, transform 0.1s ease;    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    
+}    
+
+button:hover {    
+    background-color: #2980b9;    
+    transform: translateY(-1px);    
+}    
+
+button.delete-btn {    
+    background-color: #e74c3c;    
+}    
+
+button.delete-btn:hover {    
+    background-color: #c0392b;    
+}    
+
+.logout-btn {    
+    background-color: #95a5a6;    
+    float: right;    
+    margin-bottom: 20px;    
+    margin-top: -10px;    
+}    
+
+.logout-btn:hover {    
+    background-color: #7f8c8d;    
+}    
+
+#uploadStatus, #resourceStatus, #loginStatus {    
+    margin-top: 15px;    
+    font-weight: 600;    
+    text-align: center;    
+    padding: 8px;    
+    border-radius: 4px;    
+}    
+#uploadStatus[style*="green"], #resourceStatus[style*="green"], #loginStatus[style*="green"] {    
+    background-color: #d4edda;    
+    color: #155724;    
+}    
+#uploadStatus[style*="red"], #resourceStatus[style*="red"], #loginStatus[style*="red"] {    
+    background-color: #f8d7da;    
+    color: #721c24;    
+}    
+
+
+#resourcesList {    
+    margin-top: 20px;    
+    border-top: 1px solid #eee;    
+    padding-top: 15px;    
+}    
+
+.resource-item {    
+    background-color: #ffffff;    
+    border: 1px solid #e0e0e0;    
+    padding: 12px 18px;    
+    margin-bottom: 10px;    
+    border-radius: 8px;    
+    display: flex;    
+    justify-content: space-between;    
+    align-items: center;    
+    cursor: pointer;    
+    transition: background-color 0.2s ease, border-color 0.2s ease;    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);    
+}    
+
+.resource-item:hover {    
+    background-color: #f5f5f5;    
+    border-color: #c0c0c0;    
+}    
+
+.resource-item.selected {    
+    background-color: #e0f2f7;    
+    border-color: #2196f3;    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);    
+}    
+
+.resource-item span {    
+    flex-grow: 1;    
+    color: #333;    
+}    
+
+.resource-item strong {    
+    color: #000;    
+}    
+
+.resource-item .empty-slot {    
+    font-style: italic;    
+    color: #777;    
+    background-color: #f9f9f9;    
+    border-color: #e0e0e0;    
+    cursor: default;    
+}    
+.resource-item .empty-slot:hover {    
+    background-color: #f9f9f9;    
+    border-color: #e0e0e0;    
+}    
+
+.header-actions {    
+    overflow: hidden;    
+    margin-bottom: 20px;    
+    padding-bottom: 10px;    
+    border-bottom: 1px solid #eee;    
+}
+
+
+.section-header {
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #e0f7fa; /* Light blue background for section headers */
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.section-header:hover {
+    background-color: #b2ebf2; /* Darker blue on hover */
+}
+
+.section-header.selected {
+    background-color: #00bcd4; /* Teal for selected section */
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Also ensure the new buttons are visible */
+.section-management button {
+    margin-top: 10px; /* Give some space above buttons */
+}
+
+/* You might want to adjust width for resource-item to allow more columns if desired on admin panel */
+/* .resource-item {
+    width: calc(25% - 10px); If you want 4 columns
+} */

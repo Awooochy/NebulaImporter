@@ -1,0 +1,53 @@
+{
+    "resources": {
+        "HERE YOU PLACE LINKS FOR THE RESOURCES + THEIR NAME": {
+            "url": "https://................./NebulaImporter/NebulaImporterServer/FileResources/Example.unitypackage",
+            "access_level": 2
+        },
+        "ApocalypseV2.0": {
+            "url": "https://................./NebulaImporter/NebulaImporterServer/FileResources/ApocalypseV2.0.unitypackage",
+            "access_level": 2
+        },
+        "AntiShaderArea": {
+            "url": "https://................./NebulaImporter/NebulaImporterServer/FileResources/Protection Area Antishader.unitypackage",
+            "access_level": 0
+        },
+        "FLYPrefab": {
+            "url": "https://................./NebulaImporter/NebulaImporterServer/FileResources/FLYPrefab.unitypackage",
+            "access_level": 0
+        }
+    },
+    "buttons": [
+        {
+            "section": "THIS IS A SECTION, HERE YOU PLACE NAMES AND LABELS THAT IS THE TEXT THAT WILL BE DISPLAYED IN THE BUTTONS",
+            "buttons": [
+                {
+                    "label": "FLY Avatar Prefab",
+                    "name": "FLYPrefab"
+                },
+                {
+                    "label": "AT Shader Zone",
+                    "name": "AntiShaderArea"
+                }
+            ]
+        },
+        {
+            "section": "REMEMBER AN AREA WILL ONLY BE SHOWN IN PUBLIC MENU IF IT HAS ANY ACCESS LEVEL 0 ITEM, ALSO ONLY THAT ITEM WILL APPEAR.",
+            "buttons": [
+                {
+                    "label": "Apocalypse Shader V2",
+                    "name": "ApocalypseV2.0"
+                }
+            ]
+        },
+        {
+            "section": "Private Stuff",
+            "buttons": [
+                {
+                    "label": "Apocalypse Shader V2",
+                    "name": "ApocalypseV2.0"
+                }
+            ]
+        }
+    ]
+}
